@@ -1,13 +1,12 @@
 # PASSWORD GENERATOR CHALLENGE
 
-* AS A moron who does not understand this assignment
+* AS A student who is learning how to write code
 
-* I AM trying my best to put the code together for a password generator.
+* I AM putting together a random password generator
 
-* I WANT to improve my skills at writing Javascript by continuing to work on this project and resubmitting later.
+* I WANT to be able to answer the series of prompts and be given a password
 
-* SO THAT I can gain a better understanding and become a successful developer.
-
+* SO THAT I can maintain better security on my accounts
 
 ![passwordGenerator](assets/pwgen.png)
 
