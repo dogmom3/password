@@ -9,7 +9,7 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   var selectedCharacterTypes = []
   var passwordLength = parseInt(prompt("Enter password length. Choose a number between 8-128."))
-  if (passwordLength > 8 && passwordLength < 128) {
+  if (passwordLength >= 8 && passwordLength <= 128) {
 
     var includeLowercase = window.confirm("Would you like to include lowercase letters?");
     if (includeLowercase) {
@@ -31,22 +31,22 @@ function generatePassword() {
   } else {
     window.prompt("You must choose between 8 and 128");
   }
-  return selectedCharacterTypes.concat(passwordLength)
+  // return selectedCharacterTypes.concat(passwordLength)
+  // return Math.floor(Math.random()*9 && )
   //create a new password variable assign to empty string
   //loop through password length 
   //inside loop math.random(selectedCharacterType) and concat new password
   //return new password
   var returnedPassword = []
-  for (let i = 0; i < characterAmount; i++) {
-    var returnedPassword = selectedCharacterTypes[Math.floor(Math.random() *
-      password.length)]
-    returnedPassword.push(String.fromSelectedCharacterTypes)
+  for (let i = 0; i < passwordLength; i++) {
+    var randomCharacter = selectedCharacterTypes[Math.floor(Math.random() *
+      selectedCharacterTypes.length)]
+    returnedPassword.push(randomCharacter)
   }
-  console.log(passwordCharacters)
-  return passwordCharacters.join('')
+  return returnedPassword.join('')
 } 
 
-};
+
 
 
 //2. validate input
