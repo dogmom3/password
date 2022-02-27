@@ -31,12 +31,7 @@ function generatePassword() {
   } else {
     window.prompt("You must choose between 8 and 128");
   }
-  // return selectedCharacterTypes.concat(passwordLength)
-  // return Math.floor(Math.random()*9 && )
-  //create a new password variable assign to empty string
-  //loop through password length 
-  //inside loop math.random(selectedCharacterType) and concat new password
-  //return new password
+
   var returnedPassword = []
   for (let i = 0; i < passwordLength; i++) {
     var randomCharacter = selectedCharacterTypes[Math.floor(Math.random() *
@@ -44,34 +39,11 @@ function generatePassword() {
     returnedPassword.push(randomCharacter)
   }
   return returnedPassword.join('')
-} 
-
-
-
-
-//2. validate input
-// window.confirm("Password created.");
-//3. generate password
-
-//4. display the password
-// return "generated password will go here"
-
-
-// Write password to the #password input
-// function returnPassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-// passwordText.value = password;
-
-// }
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+}
 
 generateBtn.addEventListener("click", function () {
   let password = generatePassword();
 
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-  // document.querySelector("#password").innerHTML = password;
-  // console.log(password);
 });
